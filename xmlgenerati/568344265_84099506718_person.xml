@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Document>
+    <DocInfo>
+        <DocId>
+            <Id>1</Id>
+        </DocId>
+        <DocData>
+            <firstname>Simone</firstname>
+            <lastname>Nunziante</lastname>
+            <address>Via 891</address>
+        </DocData>
+    </DocInfo>
+</Document>

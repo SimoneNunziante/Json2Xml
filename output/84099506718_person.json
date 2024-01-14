@@ -1,0 +1,37 @@
+{
+    "testsuite_name": "name_file",
+    "description": "file's description",
+    "target_system": "P",
+    "testcase": [
+        {
+            "testcase_name": "test's name",
+            "atomictests": [
+                {
+                    "schedulation": "NONE|TIME",
+                    "steps": [
+                        {
+                            "input": {
+                                "msg_type": "template1",
+                                "msg_params": {
+                                    "id": "1",
+                                    "name": "Simone",
+                                    "surname": "Nunziante",
+                                    "address": "Via 891"
+                                }
+                            },
+                            "output": {
+                                "msg_type": "template2",
+                                "msg_params":{
+                                    "id": "4",
+                                    "company_name": "Naughty Dog",
+                                    "total_emplys": 3000,
+                                    "address": "Via 198"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

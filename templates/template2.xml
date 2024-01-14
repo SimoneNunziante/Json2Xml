@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Document>
+    <DocInfo>
+        <DocId>
+            <Id></Id>
+        </DocId>
+        <DocData>
+            <companyName></companyName>
+            <numEmployees></numEmployees>
+            <address></address>
+        </DocData>
+    </DocInfo>
+</Document>

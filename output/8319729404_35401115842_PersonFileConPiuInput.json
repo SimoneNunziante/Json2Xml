@@ -1,0 +1,184 @@
+{
+  "testsuite_name": "name_file",
+  "description": "file's description",
+  "target_system": "P",
+  "testcase": [
+    {
+      "testcase_name": "test's name",
+      "atomictests": [
+        {
+          "schedulation": "NONE",
+          "steps": [
+            {
+              "input": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "5",
+                  "name": "Giuseppe",
+                  "surname": "Rossi",
+                  "address": "Via 1",
+                  "ciao": "No"
+                }
+              },
+              "output": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "6",
+                  "company_name": "Amazon",
+                  "total_emplys": 100000000,
+                  "address": "Via 2"
+                }
+              }
+            },
+            {
+              "input": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "7",
+                  "CompanyId": "2023",
+                  "company_name": "Tesys",
+                  "total_emplys": 100,
+                  "address": "Via 3"
+                }
+              },
+              "output": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "8",
+                  "name": "Paolo",
+                  "surname": "Giallo",
+                  "address": "Via 4"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "schedulation": "NONE",
+          "steps": [
+            {
+              "input": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "9",
+                  "name": "Giacomo",
+                  "surname": "Marrone",
+                  "address": "Via 5",
+                  "campo-ignorato": "Si"
+                }
+              },
+              "output": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "10",
+                  "company_name": "Oracle",
+                  "total_emplys": 1999923,
+                  "address": "Via 6"
+                }
+              }
+            },
+            {
+              "input": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "11",
+                  "CompanyId": "2023",
+                  "company_name": "HP",
+                  "total_emplys": 109999,
+                  "address": "Via 7"
+                }
+              },
+              "output": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "12",
+                  "name": "Bruce",
+                  "surname": "Springsteen",
+                  "address": "Via 8"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "testcase_name": "test's name",
+      "atomictests": [
+        {
+          "schedulation": "NONE",
+          "steps": [
+            {
+              "input": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "13",
+                  "name": "Gabriele",
+                  "surname": "Rossi",
+                  "address": "Via 9",
+                  "campo-ignorato": "Si"
+                }
+              },
+              "output": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "14",
+                  "company_name": "Samsung",
+                  "total_emplys": 10211234,
+                  "address": "Via dei Samsung"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "schedulation": "NONE",
+          "steps": [
+            {
+              "input": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "15",
+                  "name": "Gabriele",
+                  "surname": "Pagliaricci",
+                  "address": "Ariccia",
+                  "campo-ignorato": "Si"
+                }
+              },
+              "output": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "16",
+                  "company_name": "Apple",
+                  "total_emplys": 12343210,
+                  "address": "Via 123"
+                }
+              }
+            },
+            {
+              "input": {
+                "msg_type": "template2",
+                "msg_params": {
+                  "id": "17",
+                  "CompanyId": "2023",
+                  "company_name": "Sony",
+                  "total_emplys": 1203490,
+                  "address": "Via 10"
+                }
+              },
+              "output": {
+                "msg_type": "template1",
+                "msg_params": {
+                  "id": "18",
+                  "name": "Paolo",
+                  "surname": "Bianchi",
+                  "address": "Via 11"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+ul{
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (max-width:576px) {
+    ul{
+        flex-direction: row;
+    }
+}

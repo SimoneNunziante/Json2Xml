@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Document>
+    <DocInfo>
+        <DocId>
+            <Id>4</Id>
+        </DocId>
+        <DocData>
+            <companyName>Naughty Dog</companyName>
+            <numEmployees>3000</numEmployees>
+            <address>Via 198</address>
+        </DocData>
+    </DocInfo>
+</Document>

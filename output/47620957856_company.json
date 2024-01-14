@@ -1,0 +1,38 @@
+{
+    "testsuite_name": "name_file",
+    "description": "file's description",
+    "target_system": "C",
+    "testcase": [
+        {
+            "testcase_name": "test's name",
+            "atomictests": [
+                {
+                    "schedulation": "NONE|TIME",
+                    "campo ignorato": "campo ignorato",
+                    "steps": [
+                        {
+                            "input": {
+                                "msg_type": "template2",
+                                "msg_params":{
+                                    "id": "2",
+                                    "company_name": "Logitech",
+                                    "total_emplys": 20,
+                                    "address": "Via 567"
+                                }
+                            },
+                            "output": {
+                                "msg_type": "template1",
+                                "msg_params": {
+                                    "id": "3",
+                                    "name": "Federico",
+                                    "surname": "Rossi",
+                                    "address": "Via 321"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

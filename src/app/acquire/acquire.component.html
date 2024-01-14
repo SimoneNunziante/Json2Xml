@@ -1,0 +1,27 @@
+
+<div class="container">
+    <h2>Scegli un file da caricare</h2>
+    <div class="buttons-container">
+        <input type="file" class="file-upload" (change)="onChange($event)"> <!--Event che permette di acquisire i dati del file-->
+        <button class="btn btn-primary" (click)="onUpload()">Carica</button> <!--evento click che esegue una chiamata POST-->
+    </div>
+
+    <table class="table table-striped table-dark" *ngIf="file"> <!--Se è stato caricato un file visualizzo una tabella con la preview dei dati-->
+        <ng-container *ngFor="let item of arrayFile"><!--Eseguo un ciclo for per rappresentare i dati che ho posto in un array-->
+            <thead>
+                <tr>
+                    <th scope="col">File Name</th>
+                    <th scope="col">File Date</th>
+                    <th scope="col">File Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.date}}</td>
+                    <td>{{item.size}}</td>
+                </tr>
+            </tbody>
+        </ng-container>
+    </table>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>File caricati:</h2>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Last Modified</th>
+                <th>Scarica JSON</th>
+                <th>Genera Input XML</th>
+                <th>Genera Output XML</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of files">
+            <tr>
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.size}} b</td>
+                <td>{{item.lastmodified}}</td>
+                <td><a (click)="downloadData(item)"><i class="fa-solid fa-download" style="color: #1cdd0e; cursor: pointer;"></i></a></td>
+                <td><a (click)="getXmlInput(item.name)"><i class="fa-solid fa-file" style="color: #c6ac06; cursor:pointer"></i></a></td>
+                <td><a (click)="getXmlOutput(item.name)"><i class="fa-solid fa-file" style="color: #c60696; cursor:pointer"></i></a></td>
+                <td><a (click)="deleteRequest(item.name, item.id)"><i class="fa-solid fa-trash-can" style="color: #fa1100; cursor: pointer;"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div><h5>Totale di file caricati: {{files.length}}</h5></div>
+</div>
